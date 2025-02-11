@@ -36,14 +36,35 @@
     flex-direction: column;
 }
 
+.playlist-container {
+    display: none;
+}
+
 h4 {
     color: white;
     text-transform: uppercase;
+
 }
 
 .fa-solid {
     background-color: gray;
-    padding: 30px;
+    padding: 20px;
+
+}
+
+p {
+    color: gray;
+}
+
+.playlist-add {
+    display: flex;
+    align-items: center;
+}
+
+.playlist-name {
+    color: gray;
+    list-style-type: none;
+
 }
 
 .footer-items-container {
@@ -62,7 +83,7 @@ h4 {
 }
 
 .item {
-    color: white;
+    color: grey;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -100,5 +121,9 @@ h4 {
 
     .sidebar {
         max-width: 25%;
+    }
+
+    .playlist-container {
+        display: block;
     }
 }
