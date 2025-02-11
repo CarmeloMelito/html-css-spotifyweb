@@ -19,6 +19,8 @@
 
 .logo-big {
     display: none;
+    margin-bottom: 60px;
+
 }
 
 .items-container {
@@ -34,6 +36,16 @@
     flex-direction: column;
 }
 
+h4 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.fa-solid {
+    background-color: gray;
+    padding: 30px;
+}
+
 .footer-items-container {
     gap: 20px;
     display: flex;
@@ -43,4 +55,50 @@
 .profile-icon {
     background-color: gray;
     border-radius: 50%;
+}
+
+.download-icon {
+    text-align: left;
+}
+
+.item {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.item-title {
+
+    display: none;
+}
+
+.item-image {}
+
+/* .header-items-container>img:hover {
+    border-left: 1px solid green;
+} */
+
+@media (min-width:1024px) {
+    .logo-big {
+        display: block;
+
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .item-title {
+        width: 85%;
+        display: block;
+    }
+
+    .item-image {
+        width: 15%;
+    }
+
+    .sidebar {
+        max-width: 25%;
+    }
 }
