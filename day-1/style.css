@@ -13,7 +13,7 @@
 
 .logo-small {
     width: 40px;
-    height: 40px;
+    height: 5%;
     margin-bottom: 50px;
 }
 
@@ -24,5 +24,23 @@
 .items-container {
     display: flex;
     flex-direction: column;
+    height: 85%;
+    justify-content: space-between;
+}
+
+.header-items-container {
     gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-items-container {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-icon {
+    background-color: gray;
+    border-radius: 50%;
 }
