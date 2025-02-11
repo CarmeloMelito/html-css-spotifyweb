@@ -11,8 +11,18 @@
     height: 100vh;
 }
 
-.sidebar>img {
+.logo-small {
     width: 40px;
     height: 40px;
+    margin-bottom: 50px;
+}
 
+.logo-big {
+    display: none;
+}
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
