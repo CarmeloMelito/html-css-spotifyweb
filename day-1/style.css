@@ -10,6 +10,7 @@ ul {
 
 body {
     height: 100vh;
+    font-family: "Montserrat", serif;
 
 }
 
@@ -19,10 +20,10 @@ body {
 }
 
 .main-content .sidebar {
-    background-color: black;
-    flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    background-color: black;
     padding: 20px 10px;
 }
 
@@ -150,6 +151,36 @@ body {
     display: none;
 }
 
+/* Main */
+main {
+    background-color: #151922;
+    flex-grow: 1;
+}
+
+main .top-main {
+    background-color: #080b12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-main .upgrade a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    height: 90px;
+}
 
 /* media desktop */
 
