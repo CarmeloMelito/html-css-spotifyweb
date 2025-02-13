@@ -40,7 +40,7 @@ body {
     width: 130px;
 }
 
-
+/* Icone */
 .main-content .icon {
     padding: 20px 10px;
 }
@@ -67,7 +67,7 @@ body {
     display: none;
 }
 
-
+/* Fine Icone */
 
 .main-content .download {
     margin-top: auto;
@@ -81,6 +81,16 @@ body {
     height: 90px;
 }
 
+
+
+.menu li {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    flex-direction: column;
+}
+
+/* Playlist */
 .playlist {
     color: white;
     display: none;
@@ -109,13 +119,34 @@ body {
     margin-top: 10px;
 }
 
-footer {
-    height: 90px;
+/* Fine Playlist */
+
+/* user e download */
+.download {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
+.download-icon {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+}
 
+.user-icon {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
 
+}
 
+.user-text {
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    display: none;
+}
 
 
 /* media desktop */
@@ -145,5 +176,7 @@ footer {
         display: block;
     }
 
-
+    .user-text {
+        display: inline-block;
+    }
 }
