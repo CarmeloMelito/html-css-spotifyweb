@@ -162,9 +162,14 @@ main .top-main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+
 }
 
-.top-main .upgrade a {
+.top-main .upgrade {
+    display: inline-block;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -175,11 +180,21 @@ main .top-main {
     font-weight: bold;
 }
 
-
+.title-text {
+    display: flex;
+    gap: 22px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
 
 
 footer {
     height: 90px;
+    background-color: #282828;
 }
 
 /* media desktop */
