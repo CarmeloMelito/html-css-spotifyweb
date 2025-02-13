@@ -122,10 +122,11 @@ body {
 /* Fine Playlist */
 
 /* user e download */
-.download {
+.download-profile {
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-top: auto;
 }
 
 .download-icon {
@@ -138,7 +139,8 @@ body {
     width: 30px;
     height: 30px;
     opacity: 0.5;
-
+    background-color: grey;
+    border-radius: 50%;
 }
 
 .user-text {
