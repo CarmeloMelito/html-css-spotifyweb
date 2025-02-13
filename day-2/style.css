@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    height: 100vh;
+    font-family: "Montserrat", serif;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/* Fine Common */
+
+.main-content {
+    height: calc(100% - 90px);
+    display: flex;
+}
+
+.main-content .sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: black;
+    padding: 20px 10px;
+}
+
+.main-content .logo {
+    padding: 0 10px;
+}
+
+.main-content .logo .logo-small {
+    width: 30px;
+    height: 30px;
+}
+
+.main-content .logo .logo-big {
+    display: none;
+    width: 130px;
+}
+
+/* Icone */
+.main-content .icon {
+    padding: 20px 10px;
+}
+
+.main-content .icon .menu li {
+    margin-bottom: 10px;
+}
+
+.main-content .icon .menu li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    opacity: 0.5;
+    color: white;
+}
+
+.main-content .icon .menu li a img {
+    width: 30px;
+}
+
+.main-content .icon .menu li a .menu-text {
+    display: none;
+}
+
+/* Fine Icone */
+
+.main-content .download {
+    margin-top: auto;
+}
+
+.main-content main {
+    flex-grow: 1;
+}
+
+.main-content .top-main {
+    height: 90px;
+}
+
+
+
+.menu li {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    flex-direction: column;
+}
+
+/* Playlist */
+.playlist {
+    color: white;
+    display: none;
+}
+
+.playlist .list {
+    opacity: 0.5;
+}
+
+.fa-plus {
+    background-color: grey;
+    padding: 5px;
+}
+
+.plus {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.5;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Fine Playlist */
+
+/* user e download */
+.download-profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: auto;
+}
+
+.download-icon {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.user-text {
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    display: none;
+}
+
+/* Main */
+
+main {
+    background-color: #151922;
+    flex-grow: 1;
+    overflow: scroll;
+}
+
+main .top-main {
+    background-color: #080b12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+
+}
+
+.top-main .upgrade {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* Main Menu */
+
+.title-text {
+    display: flex;
+    gap: 22px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title-text a {
+    color: white;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.album-container {
+    padding: 20px;
+}
+
+.main-content main .album-container .albums {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-content main .album-container .albums>* {
+    width: calc((100% - 40px) / 2);
+    flex-shrink: 0;
+}
+
+.albums .info {
+    text-align: center;
+    color: white;
+}
+
+#recently {
+    color: white;
+}
+
+footer {
+    height: 90px;
+    background-color: #282828;
+
+}
+
+/* media desktop */
+
+@media (min-width:1024px) {
+    .main-content .sidebar {
+        width: 230px;
+    }
+
+    .main-content .logo .logo-big {
+        display: inline;
+    }
+
+    .main-content .logo .logo-small {
+        display: none;
+    }
+
+    .main-content .sidebar .icon li a {
+        justify-content: flex-start;
+    }
+
+    .main-content .sidebar .icon li a .menu-text {
+        display: inline;
+    }
+
+    .playlist {
+        display: block;
+    }
+
+    .user-text {
+        display: inline-block;
+    }
+
+    .main-content main .album-container .albums>* {
+        width: calc((100% - 100px) / 6);
+    }
+}
+
+/* Media Tablet */
+@media (min-width:768px) {
+    .main-content main .album-container .albums>* {
+        width: calc((100% - 60px) / 4);
+
+    }
+}
