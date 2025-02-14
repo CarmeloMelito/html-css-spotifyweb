@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="/day-3/style.css">
+</head>
+
+<body>
+    <!-- Main cntent -->
+    <div class="main-content">
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+
+            <div class="logo">
+                <img src="/img/logo-small.svg" alt="Logo" class="logo-small">
+                <img src="/img/logo.svg" alt="Logo grande" class="logo-big">
+
+            </div>
+
+            <div class="icon">
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <img src="/img/home.svg" alt="home"><span class="menu-text">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/search.svg" alt="cerca">
+                            <span class="menu-text">Cerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/libreria.svg" alt="libreria">
+                            <span class="menu-text">Libreria</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist">
+                <div class="playlist-title">
+                    <h2>PLAYLIST</h2>
+                </div>
+                <nav class="plus"><i class="fa-solid fa-plus"></i>Create</nav>
+
+                <ul class="list">
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                    <li>Playlist</li>
+                </ul>
+            </div>
+            <!-- Download e Profilo -->
+            <div class="download-profile">
+                <img src="/img/download.svg" alt="download" class="download-icon">
+                <a href="#" class="user-text">Scarica app</a>
+            </div>
+            <hr class="hr-gray">
+            <div class="user">
+                <img src="/img/profile.svg" alt="user" class="user-icon">
+                <a href="#" class="user-text">Carmelo Melito</a>
+            </div>
+            <!--  Fine Download e profilo -->
+        </div>
+        <!-- Fine Sidebar -->
+
+        <!-- main -->
+        <main>
+
+            <!-- Button Upgrade -->
+            <div class="top-main">
+                <a class="upgrade" href="">EFFETTUA L'UPGRADE</a>
+            </div>
+            <!-- Finito Button Upgrade -->
+
+            <!-- Main menu -->
+            <nav>
+                <ul class="title-text">
+                    <li><a href="#">In Evidenza</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Classifiche</a></li>
+                    <li><a href="#">Generi e mood</a></li>
+                    <li><a href="#">Nuove uscite</a></li>
+                    <li><a href="#">Scopri</a></li>
+                </ul>
+            </nav>
+            <!-- Fine main menu -->
+
+            <!-- Copertine Album -->
+            <div class="album-container">
+                <section id="recently">
+                    <h2>RECENTLY PLAYED</h2>
+                </section>
+                <!-- Album -->
+
+                <div class="albums">
+                    <article>
+                        <div class="image">
+                            <img src="/img/metal_lifting.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h4>HEAVY METAL</h4>
+                            <h5>Subtitle</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="/img/stranger.jpeg" alt="stranger-things">
+                        </div>
+                        <div class="info">
+                            <h4>Stranger Things,Vol 1(a Netflix Original Series Soundtrack)</h4>
+                            <h5>Kyle dixon & Micheal Stein</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="/img/aquietplace.jpeg" alt="a quiet place">
+                        </div>
+                        <div class="info">
+                            <h4>A queit place</h4>
+                            <h5>Subtitle</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="/img/split.jpeg" alt="split">
+                        </div>
+                        <div class="info">
+                            <h4>Split</h4>
+                            <h5>Subtitle</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="/img/cure.jpeg" alt="cure">
+                        <div class="info">
+                            <h4>A Cure for wellness</h4>
+                            <h5>Subtitle</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="/img/sinister.jpeg" alt="sinister">
+                        <div class="info">
+                            <h4>Sinister</h4>
+                            <h5>Subtitle</h5>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Create For -->
+
+                <section id="recently">
+                    <H2>CREATE FOR CARMELO</H2>
+                    <h5>Piu ascoltati,piu accurati saranno i suggerimenti</h5>
+                </section>
+                <div class="create">
+                    <article>
+                        <div class="image">
+                            <img src="/img/radar.jpeg" alt="release radar">
+                        </div>
+                        <div class="info">
+                            <h4>Release Radar</h4>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="/img/mixdaily.jpeg" alt="Daily mix">
+                        </div>
+                        <div class="info">
+                            <h4>Daily Mix 1</h4>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Popular -->
+                <section id="recently">
+                    <H2>Artisti piu popolari</H2>
+                    <h5>Piu ascoltati,piu accurati saranno i suggerimenti</h5>
+                </section>
+                <div class="popular">
+                    <div class="image">
+                        <img src="/img/einaudi.jpeg" alt="Einaudi" class="singer">
+                    </div>
+
+                    <div class="singer">
+                        <img src="/img/youg.jpeg" alt="Lana del rey" class="singer">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer>Footer</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
