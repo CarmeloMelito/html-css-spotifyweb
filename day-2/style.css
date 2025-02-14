@@ -212,6 +212,8 @@ main .top-main {
 
 .album-container {
     padding: 20px;
+    margin: 40px 10px;
+
 }
 
 .main-content main .album-container .albums {
@@ -225,13 +227,22 @@ main .top-main {
     flex-shrink: 0;
 }
 
-.albums .info {
+.info {
     text-align: center;
     color: white;
+    margin-top: 15px;
 }
 
 #recently {
     color: white;
+    margin-top: 40px;
+}
+
+
+.main-content main .album-container .create {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 footer {
@@ -243,6 +254,50 @@ footer {
 /* media desktop */
 
 @media (min-width:1024px) {
+    /* .main-content .sidebar {
+        width: 230px;
+    }
+
+    .main-content .logo .logo-big {
+        display: inline;
+    }
+
+    .main-content .logo .logo-small {
+        display: none;
+    }
+
+    .main-content .sidebar .icon li a {
+        justify-content: flex-start;
+    }
+
+    .main-content .sidebar .icon li a .menu-text {
+        display: inline;
+    }
+
+    .playlist {
+        display: block;
+    }
+
+    .user-text {
+        display: inline-block;
+    } */
+
+    .main-content main .album-container .albums>* {
+        width: calc((100% - 100px) / 6);
+    }
+}
+
+/* Media Tablet */
+@media (min-width:768px) {
+    .main-content main .album-container .albums>* {
+        width: calc((100% - 60px) / 4);
+
+    }
+}
+
+/* Meida mobile s */
+
+@media (min-width:576px) {
     .main-content .sidebar {
         width: 230px;
     }
@@ -271,15 +326,4 @@ footer {
         display: inline-block;
     }
 
-    .main-content main .album-container .albums>* {
-        width: calc((100% - 100px) / 6);
-    }
-}
-
-/* Media Tablet */
-@media (min-width:768px) {
-    .main-content main .album-container .albums>* {
-        width: calc((100% - 60px) / 4);
-
-    }
 }
